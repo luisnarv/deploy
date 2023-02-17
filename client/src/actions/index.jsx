@@ -6,7 +6,7 @@ import axios from "axios";
 export function GetCountries() {
     return async function (dispatch) {
         try {
-            const res = await axios.get(`/countries`)
+            const res = await axios.get(`/countries`) 
             return dispatch({
                 type: "GET_COUNTRIES",
                 payload: res.data 
