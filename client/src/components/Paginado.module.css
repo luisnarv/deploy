@@ -1,0 +1,29 @@
+.lista{
+ 
+    display: inline-block;
+    position: relative;
+   
+    cursor: pointer;
+width: 90%;
+}
+
+.number{
+    display: inline;
+color: antiquewhite;
+font-size: 90%;
+}
+
+
+.pagin{
+    border-color:  #ddd2d2;
+    border-style: inset;
+ 
+    float:left;
+    background-color: rgb(0, 0, 0);
+    line-height: 25px;
+    padding: 0% 1% 0% 1%;
+    text-decoration: none;
+    
+}
+
+
