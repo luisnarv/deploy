@@ -8,7 +8,7 @@ import AddActivity from "./components/AddActivity"
 // import { useLocation } from 'react-router-dom';
 import axios from "axios";
 
-axios.defaults.baseURL ="https://deploy-production-542e.up.railway.app/";
+axios.defaults.baseURL ="https://deploy-production-542e.up.railway.app";
 
 
 
