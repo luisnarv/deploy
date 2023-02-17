@@ -21,8 +21,8 @@
   position: relative;
   width: 9%;
   /* top: 130px; */
-  right: 45%;
-  animation-name: Home_salto__ptpmK;
+   right: 45%; 
+  animation-name: salto;
   animation-duration: 5s;
   animation-direction: initial;
   animation-iteration-count: infinite;

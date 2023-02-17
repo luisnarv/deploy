@@ -6,7 +6,9 @@ import Detail from './components/Detail';
 import AddActivity from "./components/AddActivity"
 // import Navbar from './components/navBar';
 // import { useLocation } from 'react-router-dom';
+import axios from "axios";
 
+axios.defaults.baseURL ="http://localhost:3001";
 
 
 
