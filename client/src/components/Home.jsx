@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Paginado from "./Paginado";
 import style from "./Home.module.css";
 import img from "../IMG/9.4.png";
-import "./Home.css"
+// import "./Home.css"
 
 
 
@@ -117,10 +117,10 @@ function handlePopulations(e) {
                 <Link to= "/Activity">
                      <button className={`button && ${style.button}`}>Crear actividad</button>                                                       
                      </Link>
-                         <input className={ `search && ${style.search}`}type='text'  value={searchValue} placeholder="Search country ...   🔍"    onChange={(e)=>  {handleInputChange(e)}} />
-                          <button  type="submit"  onClick={(e) => handleSubmit(e)} > buscar</button>
+                         <input className={ `search && ${style.search}`}type='text'  value={searchValue} placeholder="Search country ...   "    onChange={(e)=>  {handleInputChange(e)}} />
+                          <button className={style.button6}  type="submit"  onClick={(e) => handleSubmit(e)} >buscar              🔍</button>
                                                                                                                                                         {/* {handleInputChange(e)};  */}
-                               <button className={`button5 && ${style.button5}`} onClick={e=>{handleClick(e)}}>Clean filters 🧹</button>
+                               <button className={` ${style.button5}`} onClick={e=>{handleClick(e)}}>Clean filters    🧹</button>
 
                    <div>
                        <select className={`button2 && ${style.button2}`} onChange={e=> handleContinents(e)}>

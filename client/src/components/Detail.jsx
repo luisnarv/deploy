@@ -71,8 +71,8 @@ return (
                                         
                                             
                                             <div className={`${style.activity}`} key={e.id}>
-                                                 <br />
-                                                <br />
+                                                 <br /><br />
+                                                
                                                 <h1>ACTIVITIES {contador ++}</h1>
                                                 <p>Name: {e.name}</p>
                                                 <p>Difficulty: {e.difficulty}</p>
@@ -80,13 +80,13 @@ return (
                                                 <p>Season: {e.season}</p>
                                                 <p>Time: {e.time}</p>
                                                 <p>Details: {e.details}</p>
-                                                <br />
-                                                <br />
+                                                <br /><br />
+                                                
                                             </div>
                                         
                                         )
                                     })
-                                        : <p className={`${style.activity}`}>LOADING....</p>}
+                                        : <p className={`${style.activity}`}>Not a have activity....</p>}
 
 </div>
 </div>

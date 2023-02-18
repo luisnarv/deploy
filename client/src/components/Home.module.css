@@ -17,11 +17,12 @@
 
 
 
+
 .home{
   position: relative;
   width: 9%;
   /* top: 130px; */
-   right: 45%; 
+  right: 45%;
   animation-name: salto;
   animation-duration: 5s;
   animation-direction: initial;
@@ -84,16 +85,18 @@ overflow: auto;
 }
 
 
-.button{
 
-    
+
+
+.button{
     right: 150px;
     cursor: pointer;
     position: relative;
-background-color: rgb(232, 254, 62);
+    background-color: rgb(232, 254, 62);
     border: 3px solid;
     border-radius: 10px 1px 10px 0px;
 }
+
 
 .button2{
   position: relative;
@@ -132,11 +135,83 @@ background-color: rgb(232, 254, 62);
     cursor: pointer;
 }
 
-
+.button6{
+  color: blue;
+}
 
 .search{
     position: relative;
     right: 1000px;
     border: 3px solid;
     background-color: rgb(122, 206, 77);
+}
+
+
+@media screen and (max-width: 700px) {
+  .button{
+   background-color: rgba(0, 0, 0, 0.197);
+position: relative;
+  right: 10%;
+  border-radius: 5px;
+  color: aqua;
+
+  }
+  .button2{
+   
+    left: 122px;
+    bottom: 10px;
+    background-color: rgb(30, 32, 29);
+    border: 3px solid;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .button3{
+    left: 240px;
+    bottom: 40px;
+    background-color: rgb(30, 32, 29);
+  }
+
+  .button4{
+    position: relative;
+    left: 320px;
+    top: 17px;
+    background-color: rgb(30, 32, 29);
+    border-radius:0%;
+  }
+
+  .button5{
+    position: absolute;
+   left: 100px;
+   right: 100px;
+   top: 22%; 
+   border-radius: 0%;
+    background-color: rgb(30, 32, 29);
+  }
+
+  .button6{
+    display: none;
+  }
+
+  .search{
+    right: 50%;
+    bottom: 120px;
+  }
+  .txt{
+    top: -15px;
+    animation: cambiar 10s infinite;
+  }
+
+
+  @keyframes cambiar {
+    0% {
+      color: rgba(78, 93, 106, 0.6);
+    }
+    50% {
+      color: rgb(13, 120, 213);
+    }
+    100% {
+      color: rgba(23, 194, 49, 0.582);
+    }
+  }
+  
 }
