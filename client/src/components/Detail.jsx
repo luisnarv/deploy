@@ -30,7 +30,7 @@ const activities = detail.activities?.map(e => {
     }
   
 })
-let contador = 1
+let contador= 1;
  
 
 return (
@@ -59,6 +59,9 @@ return (
                <p>Subregion: {countrys.subregion}</p>
                <p>Area: {countrys.area}</p>
                <p>Population: {countrys.population}</p>
+               <p className={style.time}>timezone: {countrys.timezones}</p>
+               <p>latlng:  {countrys.latlng}</p>
+
              </div>
 //Si el resultado de la evaluación es verdadero, se ejecutará la primera parte de la expresión:
              :  <p>LOADING....</p>
