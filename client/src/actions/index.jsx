@@ -9,7 +9,7 @@ import axios from "axios";
 export function GetCountries() {
     return async function (dispatch) {
         try {
-            const res = await axios.get(`${url}countries`)
+            const res = await axios.get(`/countries`)
             return dispatch({
                 type: "GET_COUNTRIES",
                 payload: res.data 
@@ -62,7 +62,7 @@ export function AzFilter(payload){
 export function SearchCountry(name) {
     return async function (dispatch) {
         try {
-            const res = await axios.get(`http://localhost:3001/countries?name=${name}`)
+            const res = await axios.get(`/countries?name=${name}`)
             return dispatch({
                 type: "SearCountry",
                 payload: res.data
@@ -85,7 +85,7 @@ export function SearchCountry(name) {
 export function GetActivity() {
     return async function (dispatch) {
         try {
-            const res = await axios.get("http://localhost:3001/activity");
+            const res = await axios.get("/activity");
             return dispatch({
                 type: "GET_ACTIVITY",
                 payload: res.data
@@ -95,42 +95,21 @@ export function GetActivity() {
         }
     }
 }
-// export function GetActivity() {
-//         return async function (dispatch) {
-//             var res =  await axios.get("http://localhost:3001/activities",{
-
-//             });
-//             return dispatch({ type: "GET_ACTIVITY",
-//         payload: res.data});
-//     }}
 
 
 
 
-    //PostACtivity
-
-// export function PostACtivity(payload){
-//     return async function (dispatch){
-//         const res = await axios.post("http://localhost:3001/activities", payload);
-//         return res;
-//     }
-// }
-
-
+//  PostACtivity
 export function PostACtivity(payload) {
     return async function (dispatch) {
         try {
-            const res = await axios.post("http://localhost:3001/activities", payload)
+            const res = await axios.post("/activities", payload)
             return  res
-                // type: "SearCountry",
-                // payload: res.data  
+             
                && alert("Created")
         } catch (error) {
             alert("Failed to create")
-            // return  error.response.data.msg && alert("Not Found")
-                
-                
-                // && alert(error.response.data.msg)
+            
             }
         }
     }
@@ -142,7 +121,7 @@ export function PostACtivity(payload) {
 //GetDetail
 export function GetDetail(id){
     return async function (dispatch){
-        try {let res= await axios("http://localhost:3001/countries/" + id);
+        try {let res= await axios("/countries/" + id);
     return dispatch ({
         type: "GET_DETAIL",
         payload: res.data
